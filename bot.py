@@ -29,7 +29,7 @@ def register_all_handlers(dp):
     register_user(dp)
     register_reply(dp)
 
-    #register_echo(dp)
+    # register_echo(dp)
 
 
 async def main():
