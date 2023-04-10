@@ -1,9 +1,9 @@
 from aiogram import Dispatcher
 from aiogram.types import Message
-
+from ..keyboards.reply import *
 
 async def user_start(message: Message):
-    await message.reply("Hello, user!")
+    await message.reply(f"Привет, {message.from_user.first_name}!\nВыбери то что тебе нужно в меню ниже", reply_markup=main_menu)
 
 
 def register_user(dp: Dispatcher):
